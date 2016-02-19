@@ -1,28 +1,17 @@
 == README
+  
+  PROJETO DE TESTES (AUTOMAÇAO - WALMART)
+  
+  FUNCIONALIDADE 01 : COMPRA DE TV ATRAVES DO SITE WALMART
+  
+  feature TV ├── tv.feature ├── step_defs │ └── tv.rb └── support │ └── env.rb └── capybara.rb
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  FUNCIONALIDADE 02 : TESTANDO API JSONPLACEHOLDER
+  
+  CENARIO DE BUSCA API ├── api_search.feature ├── step_defs │ └── api_search.rb └── support │ └── env.rb └── capybara.rb
 
-Things you may want to cover:
+  CENARIO DE INCLUSAO API ├── api_add.feature ├── step_defs │ └── api_add.rb └── support │ └── env.rb └── capybara.rb
 
-* Ruby version
+  CENARIO DE EXCLUSAO API ├── api_delete.feature ├── step_defs │ └── api_delete.rb └── support │ └── env.rb └── capybara.rb
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  CENARIO DE ATUALIZACAO API ├── api_update.feature ├── step_defs │ └── api_update.rb └── support │ └── env.rb └── capybara.rb
