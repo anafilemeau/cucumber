@@ -1,0 +1,12 @@
+Given(/^I am on the API page$/) do
+  @response = HTTParty.get("http://jsonplaceholder.typicode.com/posts")
+end
+
+When(/^I search for available posts$/) do
+
+end
+
+When(/^I find a list with all of them$/) do
+ 
+end
+

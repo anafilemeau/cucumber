@@ -1,0 +1,27 @@
+Given(/^I am on the walmart homepage$/) do
+    visit 'http://www.walmart.com.br'
+end
+
+When(/^I search for TV$/) do
+    fill_in 'suggestion-search', :with =>'TV'
+    click_button 'Procurar'
+end
+
+When(/^I select a TV product$/) do
+  page.all(:xpath,"//div[@id='category-products']/section/ul/li")[1].click
+end
+
+When(/^I check its details$/) do
+  expect(page).to have_content 'TVs'
+end
+
+When(/^I choose to buy it$/) do
+  expect(page).to have_xpath '//*[@id="buybox-Walmart"]/div[2]/div/div[5]/button'
+  page.find(:xpath,"//*[@id='buybox-Walmart']/div[2]/div/div[5]/button").click
+end
+
+When(/^I dismiss guarantee$/) do
+  expect(page).to have_content 'Contrate o Seguro Garantia Estendida Original e fique tranquilo ;)'
+  page.find(:xpath,"html/body/div[2]/div/div[1]/div/button").click
+end
+

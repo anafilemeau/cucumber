@@ -1,0 +1,6 @@
+Feature: Searching posts on API JSONplaceholder
+ 
+Scenario: Searching available posts      
+ Given I am on the API page
+ When I search for available posts
+ Then I find a list with all of them
